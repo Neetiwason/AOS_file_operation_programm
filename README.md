@@ -18,7 +18,7 @@ Before using this program, make sure you have the following installed on your sy
 To compile the program, use the following command:
 
 ```shell
-gcc program.c read_file.c write_file.c create_file.c copy_file.c create_named_file.c files_stat.c -o program  
+gcc program.c read/read_file.c write/write_file.c create/create.c copy/copy_file.c named_file/create_named_file.c stats/files_stat.c -o program  
 ```
 
 
@@ -63,7 +63,7 @@ The project program consists of multiple source files, each implementing a speci
 - `program.c` - The main program file that handles command-line arguments and invokes the corresponding functions based on the command.
 - `read_file.c` - Contains the `readFile` function to read data from a file.
 - `write_file.c` - Contains the `writeFile` function to write data to a file.
-- `create_file.c` - Contains the `createFile` function to create a new file.
+- `create.c` - Contains the `createFile` function to create a new file.
 - `copy_file.c` - Contains the `copyFile` function to copy a file to another file.
 - `create_named_file.c` - Contains the `createNamedPipe` function to create a named pipe for communication between two processes.
 - `files_stat.c` - Contains the `displayFileStats` function to display statistical information of a file.
